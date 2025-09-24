@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_homepage_homebanner6s",
+  "info": {
+    "displayName": "homebanner6"
+  },
+  "options": {},
+  "attributes": {
+    "bigtext": {
+      "type": "text"
+    },
+    "smalltext": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    },
+    "profiles": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "profileslist": {
+      "type": "json"
+    },
+    "imgurl": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

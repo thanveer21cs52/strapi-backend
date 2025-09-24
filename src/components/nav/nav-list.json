@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_nav_nav_lists",
+  "info": {
+    "displayName": "nav-list"
+  },
+  "options": {},
+  "attributes": {
+    "content1": {
+      "type": "string"
+    },
+    "content2": {
+      "type": "string"
+    },
+    "content3": {
+      "type": "string"
+    },
+    "content4": {
+      "type": "string"
+    },
+    "content5": {
+      "type": "string"
+    },
+    "content6": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

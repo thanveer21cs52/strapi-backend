@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_homebanner5s",
+  "info": {
+    "displayName": "homebanner5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_homebanner3s",
+  "info": {
+    "displayName": "homebanner3"
+  },
+  "options": {},
+  "attributes": {
+    "list": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}
