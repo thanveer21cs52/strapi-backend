@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "bgimgs",
+  "info": {
+    "singularName": "bgimg",
+    "pluralName": "bgimgs",
+    "displayName": "bgimg"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bgimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imgurl": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    }
+  }
+}
