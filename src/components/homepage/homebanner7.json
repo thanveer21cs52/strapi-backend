@@ -37,6 +37,12 @@
     "scroll_list": {
       "type": "json"
     },
+    "no_projects": {
+      "type": "string"
+    },
+    "compledtext": {
+      "type": "string"
+    },
     "patnersimg": {
       "type": "component",
       "component": "shared.patners",

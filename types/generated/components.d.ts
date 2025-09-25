@@ -100,9 +100,11 @@ export interface HomepageHomebanner7 extends Struct.ComponentSchema {
   };
   attributes: {
     bigtext: Schema.Attribute.String;
+    compledtext: Schema.Attribute.String;
     img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     img2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     imgsurl: Schema.Attribute.JSON;
+    no_projects: Schema.Attribute.String;
     patnersimg: Schema.Attribute.Component<'shared.patners', true>;
     scroll_list: Schema.Attribute.JSON;
     smalltext: Schema.Attribute.String;
