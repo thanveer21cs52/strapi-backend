@@ -111,6 +111,22 @@ export interface HomepageHomebanner7 extends Struct.ComponentSchema {
   };
 }
 
+export interface HomepageHomebanner8 extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_homebanner8s';
+  info: {
+    displayName: 'homebanner8';
+  };
+  attributes: {
+    copyright: Schema.Attribute.String;
+    footerdata: Schema.Attribute.JSON;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imgurl: Schema.Attribute.String;
+    textbig: Schema.Attribute.Text;
+    textsmall: Schema.Attribute.String;
+    textsmall1: Schema.Attribute.String;
+  };
+}
+
 export interface ImgImg extends Struct.ComponentSchema {
   collectionName: 'components_img_imgs';
   info: {
@@ -246,6 +262,7 @@ declare module '@strapi/strapi' {
       'homepage.homebanner5': HomepageHomebanner5;
       'homepage.homebanner6': HomepageHomebanner6;
       'homepage.homebanner7': HomepageHomebanner7;
+      'homepage.homebanner8': HomepageHomebanner8;
       'img.img': ImgImg;
       'nav.nav-list': NavNavList;
       'nav.social': NavSocial;

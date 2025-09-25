@@ -620,6 +620,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     banner5: Schema.Attribute.Component<'homepage.homebanner5', false>;
     banner6: Schema.Attribute.Component<'homepage.homebanner6', false>;
     banner7: Schema.Attribute.Component<'homepage.homebanner7', false>;
+    banner8: Schema.Attribute.Component<'homepage.homebanner8', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

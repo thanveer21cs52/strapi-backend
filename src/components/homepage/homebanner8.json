@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_homepage_homebanner8s",
+  "info": {
+    "displayName": "homebanner8"
+  },
+  "options": {},
+  "attributes": {
+    "textbig": {
+      "type": "text"
+    },
+    "textsmall": {
+      "type": "string"
+    },
+    "textsmall1": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imgurl": {
+      "type": "string"
+    },
+    "footerdata": {
+      "type": "json"
+    },
+    "copyright": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

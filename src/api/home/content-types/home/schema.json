@@ -50,6 +50,11 @@
       "type": "component",
       "component": "homepage.homebanner7",
       "repeatable": false
+    },
+    "banner8": {
+      "type": "component",
+      "component": "homepage.homebanner8",
+      "repeatable": false
     }
   }
 }
