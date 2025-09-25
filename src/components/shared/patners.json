@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_patners",
+  "info": {
+    "displayName": "patners"
+  },
+  "options": {},
+  "attributes": {
+    "imgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img_urls": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_homepage_homebanner7s",
+  "info": {
+    "displayName": "homebanner7"
+  },
+  "options": {},
+  "attributes": {
+    "bigtext": {
+      "type": "string"
+    },
+    "smalltext": {
+      "type": "string"
+    },
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imgsurl": {
+      "type": "json"
+    },
+    "scroll_list": {
+      "type": "json"
+    },
+    "patnersimg": {
+      "type": "component",
+      "component": "shared.patners",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

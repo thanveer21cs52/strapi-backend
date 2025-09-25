@@ -93,6 +93,22 @@ export interface HomepageHomebanner6 extends Struct.ComponentSchema {
   };
 }
 
+export interface HomepageHomebanner7 extends Struct.ComponentSchema {
+  collectionName: 'components_homepage_homebanner7s';
+  info: {
+    displayName: 'homebanner7';
+  };
+  attributes: {
+    bigtext: Schema.Attribute.String;
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imgsurl: Schema.Attribute.JSON;
+    patnersimg: Schema.Attribute.Component<'shared.patners', true>;
+    scroll_list: Schema.Attribute.JSON;
+    smalltext: Schema.Attribute.String;
+  };
+}
+
 export interface ImgImg extends Struct.ComponentSchema {
   collectionName: 'components_img_imgs';
   info: {
@@ -150,6 +166,20 @@ export interface SharedMedia extends Struct.ComponentSchema {
   };
   attributes: {
     file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+  };
+}
+
+export interface SharedPatners extends Struct.ComponentSchema {
+  collectionName: 'components_shared_patners';
+  info: {
+    displayName: 'patners';
+  };
+  attributes: {
+    img_urls: Schema.Attribute.JSON;
+    imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
   };
 }
 
@@ -213,11 +243,13 @@ declare module '@strapi/strapi' {
       'homepage.homebanner4': HomepageHomebanner4;
       'homepage.homebanner5': HomepageHomebanner5;
       'homepage.homebanner6': HomepageHomebanner6;
+      'homepage.homebanner7': HomepageHomebanner7;
       'img.img': ImgImg;
       'nav.nav-list': NavNavList;
       'nav.social': NavSocial;
       'shared.header': SharedHeader;
       'shared.media': SharedMedia;
+      'shared.patners': SharedPatners;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
