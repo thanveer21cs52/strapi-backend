@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicebanner1": {
+      "type": "component",
+      "component": "services.banner1",
+      "repeatable": false
+    },
+    "servicebanner2": {
+      "type": "component",
+      "component": "services.banner2",
+      "repeatable": false
+    },
+    "servicebanner3": {
+      "type": "component",
+      "component": "services.banner3",
+      "repeatable": false
+    },
+    "servicebanner4": {
+      "type": "component",
+      "component": "services.banner4-5",
+      "repeatable": false
+    },
+    "servicebanner5": {
+      "type": "component",
+      "component": "services.banner4-5",
+      "repeatable": false
+    },
+    "servicebanner6": {
+      "type": "component",
+      "component": "services.banner6",
+      "repeatable": true
+    },
+    "servicebanner7": {
+      "type": "component",
+      "component": "services.banner7",
+      "repeatable": false
+    }
+  }
+}

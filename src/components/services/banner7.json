@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_services_banner7s",
+  "info": {
+    "displayName": "banner7"
+  },
+  "options": {},
+  "attributes": {
+    "smalltitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    },
+    "bgimg": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

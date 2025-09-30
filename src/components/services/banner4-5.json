@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_services_banner4_5s",
+  "info": {
+    "displayName": "banner4,5"
+  },
+  "options": {},
+  "attributes": {
+    "bannerimg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "textsmall": {
+      "type": "text"
+    },
+    "list": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

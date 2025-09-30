@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_services_banner2s",
+  "info": {
+    "displayName": "banner2"
+  },
+  "options": {},
+  "attributes": {
+    "smalltitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "smalltext": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

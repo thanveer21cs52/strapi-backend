@@ -163,6 +163,98 @@ export interface NavSocial extends Struct.ComponentSchema {
   };
 }
 
+export interface ServicesBanner1 extends Struct.ComponentSchema {
+  collectionName: 'components_services_banner1s';
+  info: {
+    displayName: 'banner1';
+  };
+  attributes: {
+    title1: Schema.Attribute.String;
+    title2: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesBanner2 extends Struct.ComponentSchema {
+  collectionName: 'components_services_banner2s';
+  info: {
+    displayName: 'banner2';
+  };
+  attributes: {
+    button: Schema.Attribute.String;
+    list: Schema.Attribute.JSON;
+    smalltext: Schema.Attribute.String;
+    smalltitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesBanner3 extends Struct.ComponentSchema {
+  collectionName: 'components_services_banner3s';
+  info: {
+    displayName: 'banner3';
+  };
+  attributes: {
+    banner3video: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    json: Schema.Attribute.JSON;
+    smalltitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesBanner45 extends Struct.ComponentSchema {
+  collectionName: 'components_services_banner4_5s';
+  info: {
+    displayName: 'banner4,5';
+  };
+  attributes: {
+    bannerimg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    list: Schema.Attribute.JSON;
+    textsmall: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesBanner6 extends Struct.ComponentSchema {
+  collectionName: 'components_services_banner6s';
+  info: {
+    displayName: 'banner6';
+  };
+  attributes: {
+    bigtitle: Schema.Attribute.String;
+    lefttoggle: Schema.Attribute.String;
+    pricelist: Schema.Attribute.JSON;
+    righttoggle: Schema.Attribute.String;
+    smalltitle: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesBanner7 extends Struct.ComponentSchema {
+  collectionName: 'components_services_banner7s';
+  info: {
+    displayName: 'banner7';
+  };
+  attributes: {
+    bgimg: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    list: Schema.Attribute.JSON;
+    smalltitle: Schema.Attribute.String;
+    text: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooter extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footers';
+  info: {
+    displayName: 'footer';
+  };
+  attributes: {};
+}
+
 export interface SharedHeader extends Struct.ComponentSchema {
   collectionName: 'components_shared_headers';
   info: {
@@ -266,6 +358,13 @@ declare module '@strapi/strapi' {
       'img.img': ImgImg;
       'nav.nav-list': NavNavList;
       'nav.social': NavSocial;
+      'services.banner1': ServicesBanner1;
+      'services.banner2': ServicesBanner2;
+      'services.banner3': ServicesBanner3;
+      'services.banner4-5': ServicesBanner45;
+      'services.banner6': ServicesBanner6;
+      'services.banner7': ServicesBanner7;
+      'shared.footer': SharedFooter;
       'shared.header': SharedHeader;
       'shared.media': SharedMedia;
       'shared.patners': SharedPatners;

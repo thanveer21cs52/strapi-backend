@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_services_banner3s",
+  "info": {
+    "displayName": "banner3"
+  },
+  "options": {},
+  "attributes": {
+    "banner3video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "smalltitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "json": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

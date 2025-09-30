@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_services_banner6s",
+  "info": {
+    "displayName": "banner6"
+  },
+  "options": {},
+  "attributes": {
+    "smalltitle": {
+      "type": "string"
+    },
+    "bigtitle": {
+      "type": "string"
+    },
+    "lefttoggle": {
+      "type": "string"
+    },
+    "righttoggle": {
+      "type": "string"
+    },
+    "pricelist": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}
