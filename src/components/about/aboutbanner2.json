@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_about_aboutbanner2s",
+  "info": {
+    "displayName": "aboutbanner2"
+  },
+  "options": {},
+  "attributes": {
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "smalltext": {
+      "type": "string"
+    },
+    "chartdata": {
+      "type": "json"
+    },
+    "list": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

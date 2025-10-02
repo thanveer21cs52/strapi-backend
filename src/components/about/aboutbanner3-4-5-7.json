@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_aboutbanner3_4_5_7s",
+  "info": {
+    "displayName": "aboutbanner3,4,5,7"
+  },
+  "options": {},
+  "attributes": {
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bluetext": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    },
+    "smalltext": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

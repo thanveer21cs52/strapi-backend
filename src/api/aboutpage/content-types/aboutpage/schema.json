@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutpages",
+  "info": {
+    "singularName": "aboutpage",
+    "pluralName": "aboutpages",
+    "displayName": "aboutpage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aboutbanner1": {
+      "type": "component",
+      "component": "about.aboutbanner1",
+      "repeatable": false
+    },
+    "aboutbanner2": {
+      "type": "component",
+      "component": "about.aboutbanner2",
+      "repeatable": false
+    },
+    "aboutbanner3": {
+      "type": "component",
+      "component": "about.aboutbanner3-4-5-7",
+      "repeatable": false
+    },
+    "aboutbanner4": {
+      "type": "component",
+      "component": "about.aboutbanner3-4-5-7",
+      "repeatable": false
+    },
+    "aboutbanner5": {
+      "type": "component",
+      "component": "about.aboutbanner3-4-5-7",
+      "repeatable": true
+    },
+    "aboutbanner6": {
+      "type": "component",
+      "component": "about.aboutbanner6",
+      "repeatable": false
+    },
+    "aboutbanner7": {
+      "type": "component",
+      "component": "about.aboutbanner3-4-5-7",
+      "repeatable": false
+    }
+  }
+}

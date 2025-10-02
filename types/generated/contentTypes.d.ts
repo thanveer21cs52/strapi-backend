@@ -439,6 +439,40 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAboutpageAboutpage extends Struct.SingleTypeSchema {
+  collectionName: 'aboutpages';
+  info: {
+    displayName: 'aboutpage';
+    pluralName: 'aboutpages';
+    singularName: 'aboutpage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aboutbanner1: Schema.Attribute.Component<'about.aboutbanner1', false>;
+    aboutbanner2: Schema.Attribute.Component<'about.aboutbanner2', false>;
+    aboutbanner3: Schema.Attribute.Component<'about.aboutbanner3-4-5-7', false>;
+    aboutbanner4: Schema.Attribute.Component<'about.aboutbanner3-4-5-7', false>;
+    aboutbanner5: Schema.Attribute.Component<'about.aboutbanner3-4-5-7', true>;
+    aboutbanner6: Schema.Attribute.Component<'about.aboutbanner6', false>;
+    aboutbanner7: Schema.Attribute.Component<'about.aboutbanner3-4-5-7', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::aboutpage.aboutpage'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   collectionName: 'articles';
   info: {
@@ -1234,6 +1268,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
+      'api::aboutpage.aboutpage': ApiAboutpageAboutpage;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::bgimg.bgimg': ApiBgimgBgimg;

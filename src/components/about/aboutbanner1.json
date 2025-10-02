@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_aboutbanner1s",
+  "info": {
+    "displayName": "aboutbanner1"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "smalltext": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

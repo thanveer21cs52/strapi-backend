@@ -1,5 +1,61 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AboutAboutbanner1 extends Struct.ComponentSchema {
+  collectionName: 'components_about_aboutbanner1s';
+  info: {
+    displayName: 'aboutbanner1';
+  };
+  attributes: {
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface AboutAboutbanner2 extends Struct.ComponentSchema {
+  collectionName: 'components_about_aboutbanner2s';
+  info: {
+    displayName: 'aboutbanner2';
+  };
+  attributes: {
+    chartdata: Schema.Attribute.JSON;
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    list: Schema.Attribute.JSON;
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface AboutAboutbanner3457 extends Struct.ComponentSchema {
+  collectionName: 'components_about_aboutbanner3_4_5_7s';
+  info: {
+    displayName: 'aboutbanner3,4,5,7';
+  };
+  attributes: {
+    bluetext: Schema.Attribute.String;
+    button: Schema.Attribute.String;
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    list: Schema.Attribute.JSON;
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface AboutAboutbanner6 extends Struct.ComponentSchema {
+  collectionName: 'components_about_aboutbanner6s';
+  info: {
+    displayName: 'aboutbanner6';
+  };
+  attributes: {
+    img1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    patnersimgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    patnerslist: Schema.Attribute.JSON;
+    scrolllist: Schema.Attribute.JSON;
+  };
+}
+
 export interface HomepageHomebanner1 extends Struct.ComponentSchema {
   collectionName: 'components_homepage_homebanner1s';
   info: {
@@ -347,6 +403,10 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'about.aboutbanner1': AboutAboutbanner1;
+      'about.aboutbanner2': AboutAboutbanner2;
+      'about.aboutbanner3-4-5-7': AboutAboutbanner3457;
+      'about.aboutbanner6': AboutAboutbanner6;
       'homepage.homebanner1': HomepageHomebanner1;
       'homepage.homebanner2': HomepageHomebanner2;
       'homepage.homebanner3': HomepageHomebanner3;

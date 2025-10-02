@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_about_aboutbanner6s",
+  "info": {
+    "displayName": "aboutbanner6"
+  },
+  "options": {},
+  "attributes": {
+    "scrolllist": {
+      "type": "json"
+    },
+    "patnerslist": {
+      "type": "json"
+    },
+    "patnersimgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
