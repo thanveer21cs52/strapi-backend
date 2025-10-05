@@ -56,6 +56,55 @@ export interface AboutAboutbanner6 extends Struct.ComponentSchema {
   };
 }
 
+export interface AuthSignin extends Struct.ComponentSchema {
+  collectionName: 'components_auth_signins';
+  info: {
+    displayName: 'signin';
+  };
+  attributes: {};
+}
+
+export interface ContactContactbanner1 extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contactbanner1s';
+  info: {
+    displayName: 'contactbanner1';
+  };
+  attributes: {
+    text1: Schema.Attribute.String;
+    text2: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContactContactbanner2 extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contactbanner2s';
+  info: {
+    displayName: 'contactbanner2';
+  };
+  attributes: {
+    boxtext1: Schema.Attribute.String;
+    boxtext2: Schema.Attribute.String;
+    imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    list: Schema.Attribute.JSON;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContactContactbanner3 extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contactbanner3s';
+  info: {
+    displayName: 'contactbanner3';
+  };
+  attributes: {
+    button: Schema.Attribute.String;
+    text: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomepageHomebanner1 extends Struct.ComponentSchema {
   collectionName: 'components_homepage_homebanner1s';
   info: {
@@ -189,6 +238,61 @@ export interface ImgImg extends Struct.ComponentSchema {
     displayName: 'img';
   };
   attributes: {};
+}
+
+export interface JobJobbanner1 extends Struct.ComponentSchema {
+  collectionName: 'components_job_jobbanner1s';
+  info: {
+    displayName: 'jobbanner1';
+  };
+  attributes: {
+    button: Schema.Attribute.String;
+    list: Schema.Attribute.JSON;
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface JobJobbanner2 extends Struct.ComponentSchema {
+  collectionName: 'components_job_jobbanner2s';
+  info: {
+    displayName: 'jobbanner2';
+  };
+  attributes: {
+    imgs: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    list: Schema.Attribute.JSON;
+    paragraph: Schema.Attribute.String;
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface JobJobbanner3 extends Struct.ComponentSchema {
+  collectionName: 'components_job_jobbanner3s';
+  info: {
+    displayName: 'jobbanner3';
+  };
+  attributes: {
+    joblist: Schema.Attribute.JSON;
+    selectjson: Schema.Attribute.JSON;
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface JobJobbanner4 extends Struct.ComponentSchema {
+  collectionName: 'components_job_jobbanner4s';
+  info: {
+    displayName: 'jobbanner4';
+  };
+  attributes: {
+    button: Schema.Attribute.String;
+    smalltext: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
 }
 
 export interface NavNavList extends Struct.ComponentSchema {
@@ -407,6 +511,10 @@ declare module '@strapi/strapi' {
       'about.aboutbanner2': AboutAboutbanner2;
       'about.aboutbanner3-4-5-7': AboutAboutbanner3457;
       'about.aboutbanner6': AboutAboutbanner6;
+      'auth.signin': AuthSignin;
+      'contact.contactbanner1': ContactContactbanner1;
+      'contact.contactbanner2': ContactContactbanner2;
+      'contact.contactbanner3': ContactContactbanner3;
       'homepage.homebanner1': HomepageHomebanner1;
       'homepage.homebanner2': HomepageHomebanner2;
       'homepage.homebanner3': HomepageHomebanner3;
@@ -416,6 +524,10 @@ declare module '@strapi/strapi' {
       'homepage.homebanner7': HomepageHomebanner7;
       'homepage.homebanner8': HomepageHomebanner8;
       'img.img': ImgImg;
+      'job.jobbanner1': JobJobbanner1;
+      'job.jobbanner2': JobJobbanner2;
+      'job.jobbanner3': JobJobbanner3;
+      'job.jobbanner4': JobJobbanner4;
       'nav.nav-list': NavNavList;
       'nav.social': NavSocial;
       'services.banner1': ServicesBanner1;

@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "job"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jobbanner1": {
+      "type": "component",
+      "component": "job.jobbanner1",
+      "repeatable": true
+    },
+    "jobbanner2": {
+      "type": "component",
+      "component": "job.jobbanner2",
+      "repeatable": false
+    },
+    "jobbanner3": {
+      "type": "component",
+      "component": "job.jobbanner3",
+      "repeatable": false
+    },
+    "jobbanner4": {
+      "type": "component",
+      "component": "job.jobbanner4",
+      "repeatable": false
+    }
+  }
+}

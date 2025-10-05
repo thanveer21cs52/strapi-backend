@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_job_jobbanner1s",
+  "info": {
+    "displayName": "jobbanner1"
+  },
+  "options": {},
+  "attributes": {
+    "smalltext": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

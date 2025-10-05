@@ -604,6 +604,36 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactContact extends Struct.SingleTypeSchema {
+  collectionName: 'contacts';
+  info: {
+    displayName: 'contact';
+    pluralName: 'contacts';
+    singularName: 'contact';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contactbanner1: Schema.Attribute.Component<'contact.contactbanner1', false>;
+    contactbanner2: Schema.Attribute.Component<'contact.contactbanner2', true>;
+    contactbanner3: Schema.Attribute.Component<'contact.contactbanner3', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact.contact'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -688,6 +718,34 @@ export interface ApiHomepageHomepage extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::homepage.homepage'
     > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiJobJob extends Struct.SingleTypeSchema {
+  collectionName: 'jobs';
+  info: {
+    displayName: 'job';
+    pluralName: 'jobs';
+    singularName: 'job';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    jobbanner1: Schema.Attribute.Component<'job.jobbanner1', true>;
+    jobbanner2: Schema.Attribute.Component<'job.jobbanner2', false>;
+    jobbanner3: Schema.Attribute.Component<'job.jobbanner3', false>;
+    jobbanner4: Schema.Attribute.Component<'job.jobbanner4', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::job.job'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -1273,9 +1331,11 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::bgimg.bgimg': ApiBgimgBgimg;
       'api::category.category': ApiCategoryCategory;
+      'api::contact.contact': ApiContactContact;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::job.job': ApiJobJob;
       'api::new.new': ApiNewNew;
       'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;

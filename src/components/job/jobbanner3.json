@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_job_jobbanner3s",
+  "info": {
+    "displayName": "jobbanner3"
+  },
+  "options": {},
+  "attributes": {
+    "smalltext": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "selectjson": {
+      "type": "json"
+    },
+    "joblist": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

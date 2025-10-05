@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contactbanner1": {
+      "type": "component",
+      "component": "contact.contactbanner1",
+      "repeatable": false
+    },
+    "contactbanner2": {
+      "type": "component",
+      "component": "contact.contactbanner2",
+      "repeatable": true
+    },
+    "contactbanner3": {
+      "type": "component",
+      "component": "contact.contactbanner3",
+      "repeatable": false
+    }
+  }
+}

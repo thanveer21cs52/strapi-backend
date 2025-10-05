@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_job_jobbanner2s",
+  "info": {
+    "displayName": "jobbanner2"
+  },
+  "options": {},
+  "attributes": {
+    "smalltext": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    },
+    "imgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

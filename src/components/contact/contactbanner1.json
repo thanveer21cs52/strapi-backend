@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_contactbanner1s",
+  "info": {
+    "displayName": "contactbanner1"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text1": {
+      "type": "string"
+    },
+    "text2": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

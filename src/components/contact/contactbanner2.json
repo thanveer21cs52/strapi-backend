@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_contact_contactbanner2s",
+  "info": {
+    "displayName": "contactbanner2"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "list": {
+      "type": "json"
+    },
+    "imgs": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "boxtext1": {
+      "type": "string"
+    },
+    "boxtext2": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
